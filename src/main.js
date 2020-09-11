@@ -2,7 +2,12 @@ import Vue from 'vue'
 import App from './App.vue'
 import router from './router'
 import store from './store'
+import axios from './http/index'
 
+import VueLazyLoad from 'vue-lazyload'
+Vue.use(VueLazyLoad)
+import '../Mock/index'
+Vue.prototype.$http=axios
 Vue.config.productionTip = false
 
 new Vue({
