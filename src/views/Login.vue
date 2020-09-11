@@ -21,6 +21,7 @@ export default {
     },
     methods: {
         login() {
+            //请求结构判断登录
             this.$http.post('/api/login', {
                 username: this.username,
                 passwored: this.passwored
