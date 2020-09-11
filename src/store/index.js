@@ -2,6 +2,7 @@ import Vue from 'vue'
 import Vuex from 'vuex'
 import $http from '../http/index'; //引入axios二次封装
 Vue.use(Vuex)
+//登录 二次封装 动画 loading 数据 
 
 export default new Vuex.Store({
   state: {
